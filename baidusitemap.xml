@@ -1,96 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2023/05/07/diary-2023-0507-0716-debug-java/</loc>
+    <loc>http://example.com/2023/05/01/2023-0507-0716-1.6%20Debug&%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   <url>
     <loc>http://example.com/2023/05/07/hello-world/</loc>
     <lastmod>2023-05-07</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/07/18/diary-2016-0710-0716/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/07/24/diary-2016-0717-0723/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/07/31/diary-2016-0724-0730/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/08/07/diary-2016-0731-0806/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/08/14/diary-2016-0807-0813/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/08/21/diary-2016-0814-0820/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/09/11/diary-2016-0904-0910/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/10/20/diary-2016-1008-1015/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/09/25/diary-2016-0911-0924/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/10/08/diary-2016-1001-1007/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/10/23/diary-2016-1016-1022/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/10/30/diary-2016-1023-1029/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/11/06/diary-2016-1030-1105/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/11/20/diary-2016-1112-1119/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2016/12/31/diary-2016-1225-1231/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/01/08/diary-2017-0101-0107/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/01/26/diary-2017-0118-0125/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/02/19/diary-2017-0212-0218/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/03/12/diary-2017-0305-0311/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/04/22/diary-2017-0416-0422/</loc>
-    <lastmod>2017-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2017/05/22/diary-2017-0521-0527/</loc>
-    <lastmod>2017-07-28</lastmod>
   </url>
   <url>
     <loc>http://example.com/2012/12/13/hello-world/</loc>
