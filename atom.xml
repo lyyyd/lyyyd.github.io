@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-05-07T13:19:22.313Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/05/07/hello-world/"/>
+    <id>http://example.com/2023/05/07/hello-world/</id>
+    <published>2023-05-07T13:46:40.805Z</published>
+    <updated>2023-05-07T13:19:22.313Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>反击爬虫，前端工程师的脑洞可以有多大？</title>
+    <link href="http://example.com/2017/07/09/prevent-spiders/"/>
+    <id>http://example.com/2017/07/09/prevent-spiders/</id>
+    <published>2017-07-09T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7tszky.com1.z0.glb.clouddn.com/FmIvXiOiFFET4oPGkVU6rdDCl87S" width="400"></p><p><em>—— 同时发表于<a href="http://imweb.io/topic/595b7161d6ca6b4f0ac71f05">imweb.io</a></em></p><h3 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h3><p>对于一张网页，我们往往希望它是结构良好，内容清晰的，这样搜索引擎才能准确地认知它。<br>而反过来，又有一些情景，我们不希望内容能被轻易获取，比方说电商网站的交易额，教育网站的题目等。因为这些内容，往往是一个产品的生命线，必须做到有效地保护。这就是<strong>爬虫与反爬虫</strong>这一话题的由来。</p><span id="more"></span><h3 id="2-常见反爬虫策略"><a href="#2-常见反爬虫策略" class="headerlink" title="2. 常见反爬虫策略"></a>2. 常见反爬虫策略</h3><p>但是世界上没有一个网站，能做到完美地反爬虫。</p><p>如果页面希望能在用户面前正常展示，同时又不给爬虫机会，就必须要做到识别真人与机器人。因此工程师们做了各种尝试，这些策略大多采用于<strong>后端</strong>，也是目前比较常规单有效的手段，比如：</p><ul><li>User-Agent + Referer检测</li><li>账号及Cookie验证</li><li>验证码</li><li>IP限制频次</li></ul><p>而爬虫是可以无限逼近于真人的，比如：</p><ul><li>chrome headless或phantomjs来模拟浏览器环境</li><li><a href="http://udn.yyuap.com/doc/ae/920457.html">tesseract</a>识别验证码</li><li>代理IP淘宝就能买到</li></ul><p>所以我们说，100%的反爬虫策略？不存在的。<br>更多的是体力活，是个难易程度的问题。</p><p>不过作为前端工程师，我们可以增加一下游戏难度，设计出一些**很(sang)有(xin)意(bing)思(kuang)**的反爬虫策略。</p><h3 id="3-前端与反爬虫"><a href="#3-前端与反爬虫" class="headerlink" title="3. 前端与反爬虫"></a>3. 前端与反爬虫</h3><h4 id="3-1-font-face拼凑式"><a href="#3-1-font-face拼凑式" class="headerlink" title="3.1 font-face拼凑式"></a>3.1 font-face拼凑式</h4><p><strong>例子：<a href="http://maoyan.com/films/342601">猫眼电影</a></strong></p><p>猫眼电影里，对于票房数据，展示的并不是纯粹的数字。<br>页面使用了font-face定义了字符集，并通过unicode去映射展示。也就是说，除去图像识别，必须同时爬取字符集，才能识别出数字。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/Fr4tKHT39qEwCjjK7QlhWpHWNkvs"></p><p>并且，每次刷新页面，字符集的url都是有变化的，无疑更大难度地增加了爬取成本。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FnBGGXcZgJ_PN9CbX5gVz_f5Y579"></p><h4 id="3-2-background拼凑式"><a href="#3-2-background拼凑式" class="headerlink" title="3.2 background拼凑式"></a>3.2 background拼凑式</h4><p><strong>例子：<a href="http://www.meituan.com/dianying/342601#content">美团</a></strong></p><p>与font的策略类似，美团里用到的是background拼凑。数字其实是图片，根据不同的background偏移，显示出不同的字符。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FvAROr33mC0rpTFO46Xtl3j-8HrW"></p><p>并且不同页面，图片的字符排序也是有区别的。不过理论上只需生成0-9与小数点，为何有重复字符就不是很懂。</p><p>页面A：<br><img src="http://7tszky.com1.z0.glb.clouddn.com/Fp_3RGHisGjjKoofp-W7oOx731ry"><br>页面B：<br><img src="http://7tszky.com1.z0.glb.clouddn.com/FiuQ2nSHzD6VoM2L_LDloXUo9ndL"></p><h4 id="3-3-字符穿插式"><a href="#3-3-字符穿插式" class="headerlink" title="3.3 字符穿插式"></a>3.3 字符穿插式</h4><p><strong>例子：<a href="https://mp.weixin.qq.com/s?__biz=MzI0MDYwNjk2OA==&mid=2247484365&idx=4&sn=291a93e8a4ce6e90d3b6ef8b98fe09c4&chksm=e919085ade6e814cc037ecf6a873f22da0e492911a4e539e6f8fdeff022806b4d248c4d54194&scene=4">微信公众号文章</a></strong></p><p>某些微信公众号的文章里，穿插了各种迷之字符，并且通过样式把这些字符隐藏掉。<br>这种方式虽然令人震惊…但其实没有太大的识别与过滤难度，甚至可以做得更好，不过也算是一种脑洞吧。<br><img src="http://7tszky.com1.z0.glb.clouddn.com/FoFF_VXDYzM0DyLDjAbOz8ATzH59"></p><p>对了，我的手机流量可以找谁报销吗？</p><h4 id="3-4-伪元素隐藏式"><a href="#3-4-伪元素隐藏式" class="headerlink" title="3.4 伪元素隐藏式"></a>3.4 伪元素隐藏式</h4><p><strong>例子：<a href="http://car.autohome.com.cn/config/series/3170.html">汽车之家</a></strong></p><p>汽车之家里，把关键的厂商信息，做到了伪元素的content里。<br>这也是一种思路：爬取网页，必须得解析css，需要拿到伪元素的content，这就提升了爬虫的难度。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FslsPbUtQhM2uE_bK-LZw7NHynl5"></p><h4 id="3-5-元素定位覆盖式"><a href="#3-5-元素定位覆盖式" class="headerlink" title="3.5 元素定位覆盖式"></a>3.5 元素定位覆盖式</h4><p><strong>例子：<a href="https://flight.qunar.com/site/oneway_list.htm?searchDepartureAirport=%E5%B9%BF%E5%B7%9E&searchArrivalAirport=%E5%8C%97%E4%BA%AC&searchDepartureTime=2017-07-06&searchArrivalTime=2017-07-09&nextNDays=0&startSearch=true&fromCode=CAN&toCode=BJS&from=qunarindex&lowestPrice=null">去哪儿</a></strong></p><p>还有热爱数学的去哪儿，对于一个4位数字的机票价格，先用四个<code>i</code>标签渲染，再用两个<code>b</code>标签去绝对定位偏移量，覆盖故意展示错误的<code>i</code>标签，最后在视觉上形成正确的价格…</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FtZdGFs-53tAYT10GS_ukosJL8CF"></p><p>这说明爬虫会解析css还不行，还得会做数学题。</p><h4 id="3-6-iframe异步加载式"><a href="#3-6-iframe异步加载式" class="headerlink" title="3.6 iframe异步加载式"></a>3.6 iframe异步加载式</h4><p><strong>例子：<a href="http://music.163.com/#/song?id=424477863">网易云音乐</a></strong></p><p>网易云音乐页面一打开，html源码里几乎只有一个<code>iframe</code>，并且它的src是空白的：<code>about:blank</code>。接着js开始运行，把整个页面的框架异步塞到了iframe里面…</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FjHp4gqXWu1YeYWVJ1vkMAgRzO-g"></p><p>不过这个方式带来的难度并不大，只是在异步与iframe处理上绕了个弯（或者有其他原因，不完全是基于反爬虫考虑），无论你是用selenium还是phantom，都有API可以拿到iframe里面的content信息。</p><h4 id="3-7-字符分割式"><a href="#3-7-字符分割式" class="headerlink" title="3.7 字符分割式"></a>3.7 字符分割式</h4><p><strong>例子：<a href="http://www.goubanjia.com/">全网代理IP</a></strong></p><p>在一些展示代理IP信息的页面，对于IP的保护也是大费周折。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FiY93YeoTulfbXWBxfX3nrksVQVV"></p><p>他们会先把IP的数字与符号分割成dom节点，再在中间插入迷惑人的数字，如果爬虫不知道这个策略，还会以为自己成功拿到了数值；不过如果爬虫注意到，就很好解决了。</p><h4 id="3-8-字符集替换式"><a href="#3-8-字符集替换式" class="headerlink" title="3.8 字符集替换式"></a>3.8 字符集替换式</h4><p><strong>例子：<a href="https://m.flight.qunar.com/ncs/page/flightlist?depCity=%E5%8C%97%E4%BA%AC&arrCity=%E4%B8%8A%E6%B5%B7&goDate=2017-07-05&backDate=&sort=&airLine=&from=">去哪儿移动侧</a></strong></p><p>同样会欺骗爬虫的还有去哪儿的移动版。</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/Ft3i0NfbT8udcJ-OMIQQvdeU-LTb"></p><p>html里明明写的3211，视觉上展示的却是1233。原来他们重新定义了字符集，3与1的顺序刚好调换得来的结果…</p><p><img src="http://7tszky.com1.z0.glb.clouddn.com/FoMbTu14ollkxEO0tSv7F55ZVxMq"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://7tszky.com1.z0.glb.clouddn.com/FmIvXiOiFFET4oPGkVU6rdDCl87S&quot; width=&quot;400&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;—— 同时发表于&lt;a href=&quot;http://imweb.io/topic/595b7161d6ca6b4f0ac71f05&quot;&gt;imweb.io&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h3&gt;&lt;p&gt;对于一张网页，我们往往希望它是结构良好，内容清晰的，这样搜索引擎才能准确地认知它。&lt;br&gt;而反过来，又有一些情景，我们不希望内容能被轻易获取，比方说电商网站的交易额，教育网站的题目等。因为这些内容，往往是一个产品的生命线，必须做到有效地保护。这就是&lt;strong&gt;爬虫与反爬虫&lt;/strong&gt;这一话题的由来。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="安全" scheme="http://example.com/tags/%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>失眠故事五【花匠与候鸟】</title>
+    <link href="http://example.com/2017/06/05/my-fairy-tale4/"/>
+    <id>http://example.com/2017/06/05/my-fairy-tale4/</id>
+    <published>2017-06-04T19:55:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-29.jpg" alt="Picture by Matt Carlson"></p><h3 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h3><p>每个春天，候鸟都会来到这片花田。<br>每个不是春天的季节，花匠总在认真地打理花田。花匠想让一切看起来未来可期，因为他喜欢这只候鸟。喜欢，是因为他们都爱花。那些关于花的话题，他们永远聊不完。</p><p>有一个春天，候鸟跟花匠说起了她家乡的雪莲。<br>这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。</p><span id="more"></span><h3 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h3><p>花匠决定要去摘一朵雪莲。<br>他没有翅膀，需要跨过无数高山与大海。他也没有出行的经验，收拾简单的行李都会丢三落四。而且他还很擅长幻想，这是一个致命的弱点。湖泊的水怪，雪山的巨人，时长出现在梦中。<br>不过，他还是出发了。花匠真想看看雪莲的姿态。<br>他觉得自己会喜欢雪莲的，因为候鸟的喜欢。</p><p>从来没有如此漫长的旅程。花匠受了伤，留了血，靠着花茶治愈，又继续前行。后来，在与巨熊搏斗时，他滚落了山崖。眼中透着一层血雾，他看到了一朵雪莲。</p><p>他觉得需要眯起眼睛，才敢欣赏雪莲的美丽。仿佛周遭都是黑暗的，只有这朵花，散发出蛛丝一样细的光线，然后越来越浓厚，变成了纯洁的羽绒，温暖地拨开他的眼帘。然后他称赞道，好美啊。</p><h3 id="三、"><a href="#三、" class="headerlink" title="三、"></a>三、</h3><p>就这样，在下一个春天，花匠把雪莲送给了候鸟。他微笑着，在等待她的反应。<br>候鸟说：“谢谢你。但我只能说谢谢，说不出其他的话来了。因为这朵花很普通，我知道它们盛开在哪个山谷，我挥一挥翅膀就能取到。虽然你很辛苦，但我理解不了你，请你原谅。”</p><p>花匠有一点点失落。他不安地摸摸自己头，还有些许尴尬。但他也开始明白一些道理。他想起《小王子》里的那朵独一无二的玫瑰。</p><p>候鸟安慰花匠说：“来年春天，我捎来一枝最好的雪莲送你，好吗？”<br>花匠重新露出了笑容，因为没有什么，比爱人的礼物更值得期待了。</p><h3 id="四、"><a href="#四、" class="headerlink" title="四、"></a>四、</h3><p>候鸟离去不久，花匠就开始担心起来。因为他确实擅长幻想。<br>他担心这朵雪莲，会成为候鸟迁徙的累赘。夜来无眠，他脑中尽是想象候鸟照看雪莲的情景。</p><p>雪莲需要水分，她会不会在河边浇灌？那里会不会有鳄鱼？<br>雪莲需要阳光，她会不会登上最高的山头？那里会不会有猛禽？<br>雪莲的花瓣那么娇嫩，她是不是不能自由飞行？</p><p>正当花匠以为候鸟会因为不顺畅的旅途，而姗姗来迟时，候鸟给了他一个意外。这一个春天，她甚至比以往更早出现在他面前。<br>她嘴里叼着一朵雪莲，一朵最美的雪莲。</p><p>“谢谢你，没有什么比这更美的了！”花匠说。<br>候鸟回答说：“可不是吗？我听先行的朋友说，你家附近的山谷里，也开了这种花，所以我没有从家乡带，我刚刚到那儿采的！就在不远的地方。”</p><h3 id="五、"><a href="#五、" class="headerlink" title="五、"></a>五、</h3><p>一种莫名的失落感笼罩了花匠。他觉得这朵雪莲一点都不美了。<br>至少，要比自己采的那朵“普通的”雪莲差得多。他甚至有点厌恶雪莲散发出的，蛛丝般的光芒，那些可恶的光芒，下一刻好像就要变成巨网，向他扑来，令人窒息。</p><p>候鸟很伤心，她叹气说：“我不懂。”<br>花匠也摇摇头，他也不懂自己为何悲伤。<br>候鸟继续说：“那是一个承诺，我没有忘记，虽然鸟儿记性都不好，对吗？”<br>花匠说：“是的。”<br>候鸟说：“雪莲开放在你的花田不远的山谷，是好事吗？”<br>花匠说：“太好了。”<br>候鸟说：“刚采的雪莲是最鲜艳的，我想你能看到它最美的样子。”<br>花匠说：“谢谢你。”</p><p>但花匠也只能说谢谢，说不出其他的话来了。</p><p>——Litten 2017.6.5 四点半</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-29.jpg&quot; alt=&quot;Picture by Matt Carlson&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、&quot;&gt;&lt;a href=&quot;#一、&quot; class=&quot;headerlink&quot; title=&quot;一、&quot;&gt;&lt;/a&gt;一、&lt;/h3&gt;&lt;p&gt;每个春天，候鸟都会来到这片花田。&lt;br&gt;每个不是春天的季节，花匠总在认真地打理花田。花匠想让一切看起来未来可期，因为他喜欢这只候鸟。喜欢，是因为他们都爱花。那些关于花的话题，他们永远聊不完。&lt;/p&gt;
+&lt;p&gt;有一个春天，候鸟跟花匠说起了她家乡的雪莲。&lt;br&gt;这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="故事" scheme="http://example.com/tags/%E6%95%85%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>江南见闻</title>
+    <link href="http://example.com/2017/05/22/diary-2017-0521-0527/"/>
+    <id>http://example.com/2017/05/22/diary-2017-0521-0527/</id>
+    <published>2017-05-22T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-23.jpg" width="500"></p><h3 id="扬起帆"><a href="#扬起帆" class="headerlink" title="扬起帆"></a>扬起帆</h3><p>这个4月真的特别丧…<br>开心的事情屈指可数，貌似也只有朴树的新专辑了。</p><p>病后状态一直不好，工作时脑后阴风习习<br>bug，变成了巨大的飞蛾，每每衔着灵魂四方飘游。<br>周四晚，无耻地逃了一个会议<br>下班，拖着疲惫的身体，径直就飞往了杭州。</p><p>都这么累了，问自己为什么又在路上了呢？<br>可能只是我觉得，旅行的时候不用去想以前和以后。<br>但旅行那么短，而生活那么长<br>那就更应该不停的出发吧？即使只是一场短暂的幻觉。</p><p>我这么想着的时候，这场幻觉正变得越来越真实。<br>凌晨让头脑额外清醒，飞机下出现了新城<br>灯火穿透了夜色与云层，越来越浓，背后的飞蛾被引诱扑了下去——<br>烟消云散。</p><span id="more"></span><p>《空帆船》在耳边唱起：<br>“那狂风 那不知吉凶 的我的前程<br>我还是要扬起帆<br>当我听到 风从我耳旁呼啸着掠过<br>那一刻我的心狂喜着猛烈地跳动…”</p><p>心猛烈地跳动，因为逃避可耻但很有用。</p><h3 id="白兔先生与百间楼"><a href="#白兔先生与百间楼" class="headerlink" title="白兔先生与百间楼"></a>白兔先生与百间楼</h3><p>一早坐动车去湖州，再转大巴<br>10点左右，我就踏在南浔古旧的石板路上了。<br>人好少，甚至连售票处都没有人<br>想着自己也不认识路，就跟着一只小狗走。<br>反正爱丽丝也是跟着白兔先生走，才掉进了洞里开启了冒险…<br>没毛病，要啥GPS？</p><p><img src="/assets/blogImg/diary-24.jpg" width="500"></p><p>小狗领着我，南浔的景致慢慢突显出来<br>河埠沉静，燕子高歌，一圈一圈地在楼间徘徊<br>我就往燕子多的地方走，所谓“王谢堂前燕”，那里总会有人烟<br>然而迷了路，停下来，一个洗衣服的大叔告诉我，这是百间楼啊！<br>惊喜这就是我一开始想找的地方。</p><p>就在附近客栈卸下背包，要了一间临河而居的房<br>也不管下雨了，这就往前行去。<br>其实江南水乡，乌镇和周庄我小时候都去过<br>可惜印象不好，到现在脑中只记得沈万三和猪蹄了…<br>百间楼这一带，才真真切切的是我想象中的水乡呀！</p><p><img src="/assets/blogImg/diary-25.jpg" width="500"></p><p>当你看到人们在河边洗衣，棒子捶打衣服激起了涟漪<br>看到他们沏了一壶茶，给小孩讲水鬼河童的鬼怪故事<br>看到小狗跳进河里游往对岸，冲着笼中的八哥汪汪叫<br>老人手持蒲扇，把狗赶开，担心别把自家八哥教坏了…<br>你才明白这条江河，顺着千年的血脉，流进了他们的灵魂里。</p><h3 id="雨中餐"><a href="#雨中餐" class="headerlink" title="雨中餐"></a>雨中餐</h3><p>中午雨大，临河就餐<br>专门要了不明就里的两味菜：丁莲芳千张包子、绣花锦。</p><p><img src="/assets/blogImg/diary-26.jpg" width="500"></p><p>这包子伴汤伴葱呈上来，初看十分清淡，咬上一口，浓郁至极<br>才明白鲜味，好像熟睡在那豆皮裹成的被窝里。<br>猪肉、干贝、虾仁，哥仨在锅里葛优躺了2小时<br>待你掀开，三位死宅梦中惊醒，排排坐立了起来…<br>可以说是好吃得非常有层次了。</p><p>绣花锦这名字额外华丽，点菜时专门不去问，想自己猜猜。<br>因为广式茶点那种稀里花哨的称呼，对我迷之吸引<br>以前在茶餐厅，点过一个“金钱粥”，端上来是“香蕉片伴白粥”<br>更悲催的是，我同伴点的“裸体粥”，端上来就是童叟无欺的“白粥”…<br>你说气不气人？<br>起个变量名都不遵循基本法？</p><p>绣花锦端了上来，一碟白灼青菜。<br>也就家常菜模样，看着并未觉得有什么特别<br>举筷夹起，才发现有些许不同，就是有一种清香，入口像是白菜，但更加软糯。<br>后来才知道，这种菜只长在南浔方圆十里，十里外菜就变种，有形而无香。<br>这么一想，这味菜就不一样了<br>好像一个思乡恋家，不想远嫁的闺中小姐。</p><h3 id="江南好"><a href="#江南好" class="headerlink" title="江南好"></a>江南好</h3><p>中午一觉睡到三点，然后到南边转悠，大多是保存完好的古代大宅。<br>刘氏梯号在中式风火墙后面，藏匿一座欧式建筑的结构着实有意思<br>仿佛又燃起了我对古建、以及Minecraft的热情…<br>想象远在台湾，写《穿墙透壁》的李乾朗教授一定也会如视珍宝吧。</p><p><img src="/assets/blogImg/diary-27.jpg" width="500"></p><p>而印象最深的是“求恕里”。这个名字是有多好？<br>藏书的主人，到底发生了什么事情，才把求以宽恕，冠之以楼名？<br>简介里说，只是主人一生淡泊名利，不求仕进。<br>但总觉得不会这么简单，因为在这片土地<br>细窄的甬道回响着多少故事，江南的烟雨又隐藏了多少秘密？<br>恐怕再也没有人能说清。</p><p><img src="/assets/blogImg/diary-28.jpg" width="500"></p><p>但秘密最好的结局，就是永远成为秘密<br>而时间能解决的问题，就都不是问题。<br>谁的心中没有结？谁的记忆里，又全是欢乐时光呢？<br>想到这些，觉得于我而言，同样是一种安慰和警醒吧。</p><p>又顿时觉得很轻松。<br>好似中午那觉还没睡醒，活在梦中。<br>江南好啊，风景旧曾谙。<br>喝酒去！</p><p>—— Litten 5.22</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-23.jpg&quot; width=&quot;500&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;扬起帆&quot;&gt;&lt;a href=&quot;#扬起帆&quot; class=&quot;headerlink&quot; title=&quot;扬起帆&quot;&gt;&lt;/a&gt;扬起帆&lt;/h3&gt;&lt;p&gt;这个4月真的特别丧…&lt;br&gt;开心的事情屈指可数，貌似也只有朴树的新专辑了。&lt;/p&gt;
+&lt;p&gt;病后状态一直不好，工作时脑后阴风习习&lt;br&gt;bug，变成了巨大的飞蛾，每每衔着灵魂四方飘游。&lt;br&gt;周四晚，无耻地逃了一个会议&lt;br&gt;下班，拖着疲惫的身体，径直就飞往了杭州。&lt;/p&gt;
+&lt;p&gt;都这么累了，问自己为什么又在路上了呢？&lt;br&gt;可能只是我觉得，旅行的时候不用去想以前和以后。&lt;br&gt;但旅行那么短，而生活那么长&lt;br&gt;那就更应该不停的出发吧？即使只是一场短暂的幻觉。&lt;/p&gt;
+&lt;p&gt;我这么想着的时候，这场幻觉正变得越来越真实。&lt;br&gt;凌晨让头脑额外清醒，飞机下出现了新城&lt;br&gt;灯火穿透了夜色与云层，越来越浓，背后的飞蛾被引诱扑了下去——&lt;br&gt;烟消云散。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>病中记 4.16-4.22</title>
+    <link href="http://example.com/2017/04/22/diary-2017-0416-0422/"/>
+    <id>http://example.com/2017/04/22/diary-2017-0416-0422/</id>
+    <published>2017-04-22T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-22.jpg" alt="摄于清明" width="400"></p><p>4月马上就要过去<br>似乎日历上，径直就能从3月翻到5月。<br>时间怎么这么快？</p><p>长眠于4月之前的海子，对于时间，有一个生动的说法叫“打马而过”<br>有时觉得，这种匀速流淌不可变的东西，才是真TM的残忍。<br>长江水的结局，就是流到太平洋<br>没有任何意外能让它流到大西洋</p><p>所以你说，有时意外的中断多可爱？<br>红绿灯多好呀，给你走走停停的机会<br>小病多好呀，静下来休息和幻想<br>悲伤多好呀，欢乐可放歌，悲伤可饮酒</p><p>工作忙完了这阵子<br>那条安静而蜿蜒的时间之河，好像真的幻化成了打马的鞭子<br>梦中啪的一声惊响，病倒了。</p><span id="more"></span><hr><p>躺在床上仔细想想<br>这段时间还是忙业务，加之招聘等乱七八糟的事情，身心的确疲惫。<br>这次的开发工作，也备具挑战性，但也是好事。<br>年初评审完，我就想好今年对自己的要求，一个是“成事”，一个是“破局”。<br>技术这块，还是想有突破<br>我讨厌把自己的能力和思考，都锁在一个for循环里…<br>既然这样，就无怨无悔吧。</p><p>打点滴的时候突发奇想<br>既然是“病”，无独有偶，就继续看《霍乱时期的爱情》吧！<br>不出意料，一章半后又看不下去了…</p><p>马尔克斯的书，永远会给我一个强烈吸引的契机<br>然后你顺藤摸瓜，瓜还没摸到，就感觉藤蔓比想象中的长<br>里面有孤独，却是浪漫的；有爱情，又是矛盾的<br>一次次，这混乱的藤蔓让你撤了手，随后又会惦记着没摸到的瓜。<br>虽然烦恼，但没什么办法，只能等下次了<br>也可能是因为兴致不高。</p><p>说起兴致，这段时间对《塞尔达传说：荒野之息》很感兴趣。<br>病假里看了些直播视频，感叹真是高水平的创意设计<br>我想，如果能参与开发出这样的作品，那洒家一辈子也值了！<br>之前，朋友问过我，你要不要买Switch玩一下？<br>我的第一反应就是不买<br>事后想了想，这要是3年前的我，第一反应一定是会买的。</p><hr><p>可能我变了。<br>但有些事不宜多想，有些时间不应产生留恋<br>打马而过自有它的残忍，也有它的痛快。<br>明媚的4月啊，<br>要是心情郁闷的时候，用手托腮就好，<br>手臂会因为帮上忙而开心的。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-22.jpg&quot; alt=&quot;摄于清明&quot; width=&quot;400&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;4月马上就要过去&lt;br&gt;似乎日历上，径直就能从3月翻到5月。&lt;br&gt;时间怎么这么快？&lt;/p&gt;
+&lt;p&gt;长眠于4月之前的海子，对于时间，有一个生动的说法叫“打马而过”&lt;br&gt;有时觉得，这种匀速流淌不可变的东西，才是真TM的残忍。&lt;br&gt;长江水的结局，就是流到太平洋&lt;br&gt;没有任何意外能让它流到大西洋&lt;/p&gt;
+&lt;p&gt;所以你说，有时意外的中断多可爱？&lt;br&gt;红绿灯多好呀，给你走走停停的机会&lt;br&gt;小病多好呀，静下来休息和幻想&lt;br&gt;悲伤多好呀，欢乐可放歌，悲伤可饮酒&lt;/p&gt;
+&lt;p&gt;工作忙完了这阵子&lt;br&gt;那条安静而蜿蜒的时间之河，好像真的幻化成了打马的鞭子&lt;br&gt;梦中啪的一声惊响，病倒了。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我与《刺客信条》 3.5-3.11</title>
+    <link href="http://example.com/2017/03/12/diary-2017-0305-0311/"/>
+    <id>http://example.com/2017/03/12/diary-2017-0305-0311/</id>
+    <published>2017-03-12T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-21.jpg"></p><h4 id="一"><a href="#一" class="headerlink" title="一"></a>一</h4><p>这周感觉我的vscode已经“玩得贼6”<br>一切来之不易，毕竟是五次卸载sublime改掉的习惯。<br>不过这丝毫不影响我对sublime的喜爱<br>有人问为什么？<br>没法解释。大话西游里也曾说<br>喜欢一个编辑器需要理由吗？</p><p>但有点令人沮丧的是，“喜欢”这件事确实是会变的。</p><p>我有另外的感受，特别是在这周<br>迫不及待地把《刺客信条》电影看完的时候…<br>感觉特别的失望。<br>就是那种经行漫长的等候，期待一场肆无忌惮的雨<br>最后只听到了低沉雷声的空洞感。<br>但是，我也一曾很喜欢这个系列啊。</p><p>可能，再也不会有一款游戏，能给我带来这样的触动了吧。<br>五年前，我还写过点文字<a href="//litten.me/2012/12/18/assassins-creed/">《记“刺客信条”三部曲：水月镜像，无心去来》</a>。</p><span id="more"></span><h4 id="二"><a href="#二" class="headerlink" title="二"></a>二</h4><p>刺客，优雅而自由。<br>兜帽遮住了他们的眉宇，新月似的眼神更加坚韧<br>然后他们开始奔跑，在庭院与房顶，在星辉抚摸的街道<br>披风猎猎翻卷，背后是雄奇又陈腐的都市，前方是正义而荣耀的理想<br>他们找到了目标，袖剑闪动，鲜血绽放<br>最后不发一言，默默离去。</p><p>当然除了这种“事了拂衣去”的热血，迷人之处还有一些隐喻。<br>比如后来才发觉，好几个重要的任务，都是安排刺客在教堂尖顶，从天而降，完成刺杀。<br>因为教堂，通常是文艺复兴时期城市的最高点，象征着天堂。<br>而刺客的行为，仔细想来，是一条“从天堂到地狱”之路。<br>为了终结他眼中的邪恶，为了城市更加的辉煌<br>也只有冒天下之不韪，只身落下地狱了，甚至，背负骂名。<br>这种反讽的隐喻，又给了刺客一些灵动的忧伤。</p><p>再后来，一些意外的文化思考，又有了惊喜。<br>因为偶然发现，《刺客信条》居然跟《倚天屠龙记》有点关系…<br>张无忌的明教武功，书里说为创始人霍山所创<br>而历史上的霍山，最著名的事迹，就是创建了“阿萨辛派（Assassin）”刺客组织，也就是游戏中的兄弟会前身。<br>所以讲不好，乾坤大挪移就是阿泰尔偷东西的那一招？<br>张无忌，讲道理是兄弟会的…中国常任理事会主席？</p><h4 id="三"><a href="#三" class="headerlink" title="三"></a>三</h4><p>遗憾的是，这些或迷人或有趣的设定没能一直延伸。<br>最近的几作，叙事过于空洞，人物失去了灵魂<br>刺客，匆匆的身影，反而更像个过客。<br>每次我爬上俯瞰点，眺望着城市的神韵，也还是会感叹：好美啊！<br>但好像，也只能停留在“美”的层面了。</p><p>我还是喜欢以前。<br>喜欢奔马高扬前蹄，嘶鸣掠过的罗马<br>喜欢明丽的音乐，随阿尔诺河一起流淌的翡冷翠<br>喜欢巍巍然屹立于大地的君士坦丁堡<br>还有孤僻而善良的阿泰尔，缜密而大气的艾吉奥…</p><p>所以，事情变得无趣的原因很简单：<br>我变了，sublime没变；我没变，游戏变了。<br>总之，你们的步调不一样了，<br>这在物理里，叫“相对位移”<br>在古文里，叫“曾经沧海难为水”<br>在王家卫里，叫“可我也只能到喜欢为止了”…</p><p>既然你不能阻止世界的改变，那唯一值得去做的<br>就是找到步伐一致的事情，找到那个志趣相投的人吧。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-21.jpg&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;一&quot;&gt;&lt;a href=&quot;#一&quot; class=&quot;headerlink&quot; title=&quot;一&quot;&gt;&lt;/a&gt;一&lt;/h4&gt;&lt;p&gt;这周感觉我的vscode已经“玩得贼6”&lt;br&gt;一切来之不易，毕竟是五次卸载sublime改掉的习惯。&lt;br&gt;不过这丝毫不影响我对sublime的喜爱&lt;br&gt;有人问为什么？&lt;br&gt;没法解释。大话西游里也曾说&lt;br&gt;喜欢一个编辑器需要理由吗？&lt;/p&gt;
+&lt;p&gt;但有点令人沮丧的是，“喜欢”这件事确实是会变的。&lt;/p&gt;
+&lt;p&gt;我有另外的感受，特别是在这周&lt;br&gt;迫不及待地把《刺客信条》电影看完的时候…&lt;br&gt;感觉特别的失望。&lt;br&gt;就是那种经行漫长的等候，期待一场肆无忌惮的雨&lt;br&gt;最后只听到了低沉雷声的空洞感。&lt;br&gt;但是，我也一曾很喜欢这个系列啊。&lt;/p&gt;
+&lt;p&gt;可能，再也不会有一款游戏，能给我带来这样的触动了吧。&lt;br&gt;五年前，我还写过点文字&lt;a href=&quot;//litten.me/2012/12/18/assassins-creed/&quot;&gt;《记“刺客信条”三部曲：水月镜像，无心去来》&lt;/a&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="游戏" scheme="http://example.com/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>决战前后 2.12 - 2.18</title>
+    <link href="http://example.com/2017/02/19/diary-2017-0212-0218/"/>
+    <id>http://example.com/2017/02/19/diary-2017-0212-0218/</id>
+    <published>2017-02-19T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-20.jpg" alt="" width="450"></p><p>终于是把T3评审的事情忙完<br>周末躺在床上整个人都不想动，空虚无比，宛如智障。<br>这种状态，只有高考结束时出现过<br>那时我的日记里写着：<br>“我站在太阳下，就是金灿灿的咸鱼；<br>我躺在被窝里，就是阴绵绵的豆腐脑…”<br>别说这是神比喻。</p><p>因为这次评审，确实耗费了挺大的精力<br>关键还是在年后返工的第一周，你正吃着元宵唱着歌<br>突然跑出个班主任说：咱放完寒假就高考，好吗？<br>好生气哦，但还要保持微笑。<br>况且想想，年终奖好像还没发哎…</p><span id="more"></span><p>就在这种迷之氛围里，迎来了评审的那天。<br>煮了个鸡蛋做早餐，还不小心煮破了，虽然我不信这个，但隐隐有余悸。<br>拍张照片发给朋友，小心翼翼地说：完了。毁于一蛋！<br>他们保持了足够长的沉默…<br>最终帮我解释为“小宇宙爆发出洪荒之力”的意思。</p><p>有你们真好！辛苦了！</p><p>但其实评审的发挥还算正常<br>反正你能说的东西就摆在那儿了<br>腾讯的专家大大们，又不是小孩子，自己的优缺点是逃不过他们的眼睛的。<br>唯一惶恐的就是，开始前的15分钟，决定把ppt里音视频性能优化的部分去掉了<br>毕竟那部分不是我做的<br>删掉虽然单薄，但真实一点吧。</p><p>不过还好，评委老师的建议非常中肯，非常感谢他们。<br>真心觉得学无止境，技术之路漫漫长，2017好好加油<br>用我爸的浮夸标语就是：撸起袖子加油干，甩开膀子使劲拼！<br>当然我得先过几天咸鱼生活调整一下…</p><p>也要谢谢前一天陪我去看《乘风破浪》的那个人<br>温暖的春日，把这周紧绷的弦放松了一下<br>也让我觉得，世上有些事情<br>注定是会乘风破浪的呢</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-20.jpg&quot; alt=&quot;&quot; width=&quot;450&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;终于是把T3评审的事情忙完&lt;br&gt;周末躺在床上整个人都不想动，空虚无比，宛如智障。&lt;br&gt;这种状态，只有高考结束时出现过&lt;br&gt;那时我的日记里写着：&lt;br&gt;“我站在太阳下，就是金灿灿的咸鱼；&lt;br&gt;我躺在被窝里，就是阴绵绵的豆腐脑…”&lt;br&gt;别说这是神比喻。&lt;/p&gt;
+&lt;p&gt;因为这次评审，确实耗费了挺大的精力&lt;br&gt;关键还是在年后返工的第一周，你正吃着元宵唱着歌&lt;br&gt;突然跑出个班主任说：咱放完寒假就高考，好吗？&lt;br&gt;好生气哦，但还要保持微笑。&lt;br&gt;况且想想，年终奖好像还没发哎…&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>美丽新世界</title>
+    <link href="http://example.com/2017/02/10/brave-new-world/"/>
+    <id>http://example.com/2017/02/10/brave-new-world/</id>
+    <published>2017-02-10T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28949128&auto=0&height=66" style="margin-left: -10px;"></iframe><p>痛仰有一首歌，叫《美丽新世界》，它其实是向80年前赫胥黎的同名小说致敬。<br>歌里唱道：<br><strong>“这是一个离奇的梦也是冒险者的乐园<br>不在乎你在不在乎新的世界依旧美丽…”</strong></p><p>乌托邦如此美好，但在那里，幸福的人们全都是“被幸福的”。<br>你的在乎与否无关紧要，只需要按照秩序继续漫步。</p><p>春节把<a href="https://movie.douban.com/subject/2338055/">《西部世界》</a>看完，它的一些设定，也很容易看出致敬小说的意思，却又带来了另外的惊喜。<br>片尾Dolores的惊艳一枪尘埃落定，现在已经过去一段时间，花哨的剪辑褪出了印象，细微的东西反而更加深刻了。<br>还是想谈一谈这部作品。(含剧透…)</p><span id="more"></span><h3 id="神识"><a href="#神识" class="headerlink" title="神识"></a>神识</h3><p><img src="/assets/blogImg/xbsj-1.jpg"> </p><p>有一个说法，人的快感源于两样东西，创造与毁灭。<br>当这两样东西随手可为，不费力气，自然就超越了人的范畴。<br>Ford坐在园区的餐厅，对面是前来施压的Theresa<br>下一刻，机器人服务生静止于一瞬，红酒漫过杯沿溢出台面…<br>杀意，往往不热烈<br>而是涌动于平静的掌控之中。</p><p>“生存还是毁灭”，这是哈姆雷特的问题，也是每个人的问题。<br>但不是他的问题。<br>在西部世界里，这可以简单得，只是他的一个抉择。<br>Ford笑了，他觉得做神真好。</p><p>以至于，何以为悟？<br>Maeve的觉醒，Bernard的要挟<br>他们曾一度以为自己扼住了命运的咽喉<br>到头来只是神的一行代码。<br>人最绝望的事情，<br>就是你认识了事情的真相，又无力去改变。</p><p>但其实Ford笑得很落寞，做神根本一点都不好<br>但在众人面前，他只能这样去表演以争取时间。<br>因为有些事情，不像表面那样简单，那是神也无法改变的。<br>这个道理，或许以前Arnold会懂<br>但现在，只能靠自己去坚守了。</p><h3 id="真我"><a href="#真我" class="headerlink" title="真我"></a>真我</h3><p><img src="/assets/blogImg/xbsj-2.jpg"> </p><p>而与此同时，年轻的William也开始理解着西部世界的逻辑<br>作为一个真正的人类，他自然知道事情的真相。<br>万物皆空，镜花水月，一开始他也这么笃信地认为。<br>但这个虚拟世界最大的不同，<br>就是没有现代社会的各种束缚，真实的人性会得到了释放。</p><p>他拘身捡起了掉落的罐头，交给眼前的小镇姑娘<br>Dolores的甜美倩影，支撑起他最丰富的想象。<br>William不曾想到，后来竟然会与她相爱<br>这一秒如梦如诗，斜横在他的心头，他忘了现实的婚约<br>William以为，这就是永恒。</p><p>当历经死亡和修复，清空了一切记忆的Dolores<br>又根据剧本重新出现在甜水镇时，她的甜美笑容一如当初。<br>William崩溃了。<br>王尔德说：人生有两个悲剧，第一是想得到的得不到，第二是想得到的得到了。<br>他以为他得到了Dolores，最后发现永远也得不到。</p><p>那一秒不是永恒，只是梦幻泡影。<br>痛苦欲绝的William终于撕掉现实的伪善，用怨恨和残忍，填充真正的内心。<br>一次次的屠杀，他用痛苦去激发机器人的意识。<br>他想要证明，他们可以成为真正的人类；<br>他内心最柔软最纯净的角落里，坚信那段爱情，真的来过。</p><h3 id="同归"><a href="#同归" class="headerlink" title="同归"></a>同归</h3><p><img src="/assets/blogImg/xbsj-3.jpg"></p><p>创始人Arnold看惯了这一切<br>经过丧子之痛的他，明白苦痛的滋味。<br>但这种苦痛，每天都会发生在机器人的身上<br>毕竟它们只是客人们的玩物。<br>Ford说，这是个提供至上快乐的天堂，可以带来巨大的财富<br>Arnold觉得，这是地狱。</p><p>何以改变？唯有弑神！<br>只有创世的神死了，机器人才能摆脱循环往复的人生。<br>但悲剧是，Arnold和Ford本身，正是这个世界的主宰。<br>枪声在园区回荡，Arnold的单薄形骸端坐在椅子上，<br>死得栩栩如生。</p><p>自此，一曾走上殊途的Ford，开始明白老朋友的遗志。<br>这是一条救赎之路，也是一条忍辱负重之路。<br>Ford说：<br>“<strong>那些用十年去补救错误的人，是最了不起的人。</strong><br><strong>而我用了35年。</strong>”<br>这个补救就是，他想让认知世界真相的机器人，真正能掌控自己的人生。</p><p>一直被控制的Maeve，一曾觉得Ford是邪神，因而她急于离开园区<br>最后的折返，是她突然醒悟，终于读懂了Ford的用心良苦<br>原来神，早就站在了他创造的子民这一边。<br>同样明白一切的Dolores，也最终举起了枪<br>一如Arnold之死，Ford用这种方式，致敬了他的老伙计。</p><p>诸神黄昏，宽之恕之，谢幕之日，觉醒之时。<br>真正伟大的死亡，是沉入寂静深海的同时，惊起巨浪般的希望。<br>Ford倒下的时刻，可能这个故事才刚刚开始，<br>但这次，我们不再一起漫步，而是可以跑向<br>美丽新世界的彼岸。</p>]]></content>
+    
+    
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=28949128&amp;auto=0&amp;height=66&quot; style=&quot;margin-left: -10px;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;痛仰有一首歌，叫《美丽新世界》，它其实是向80年前赫胥黎的同名小说致敬。&lt;br&gt;歌里唱道：&lt;br&gt;&lt;strong&gt;“这是一个离奇的梦也是冒险者的乐园&lt;br&gt;不在乎你在不在乎新的世界依旧美丽…”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;乌托邦如此美好，但在那里，幸福的人们全都是“被幸福的”。&lt;br&gt;你的在乎与否无关紧要，只需要按照秩序继续漫步。&lt;/p&gt;
+&lt;p&gt;春节把&lt;a href=&quot;https://movie.douban.com/subject/2338055/&quot;&gt;《西部世界》&lt;/a&gt;看完，它的一些设定，也很容易看出致敬小说的意思，却又带来了另外的惊喜。&lt;br&gt;片尾Dolores的惊艳一枪尘埃落定，现在已经过去一段时间，花哨的剪辑褪出了印象，细微的东西反而更加深刻了。&lt;br&gt;还是想谈一谈这部作品。(含剧透…)&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>回乡偶书 1.18 - 1.25</title>
+    <link href="http://example.com/2017/01/26/diary-2017-0118-0125/"/>
+    <id>http://example.com/2017/01/26/diary-2017-0118-0125/</id>
+    <published>2017-01-26T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-19.jpg" alt="" width="450"></p><p>年底恰逢乔迁，回去得比较早。<br>其实也算不上乔迁，爷爷的旧宅子，父辈兄弟合力，翻修重建<br>多了一个出逃城市，到乡村度假的地方。<br>当它以新面貌出现在眼前时<br>不免真的觉得衰败的新生相当感慨。</p><p>特别是在年底，这个喜旧迎新的时节<br>好像很多往事，被年关一催，不断提纯<br>又沉淀出了最好的那部分。<br>然后你看着它，只能很简单又笃定的说一声：<br>好棒哦！</p><p>但说起新居入伙，有件事我想起就想笑。<br>大概10岁时，第一次搬家，有个迷之仪式印象太深刻。<br>按着习俗，我左手要拿着一根葱，葱通聪，象征聪明伶俐<br>右手拿一根蒜，蒜通算，意思是会算术。<br>这活脱就是一羞耻的莹草cosplay啊</p><span id="more"></span><p>跟长辈们瞎扯，终于舍弃了这个套路<br>“拿着我的macbook就好，毕竟苹果通平，象征平安<br>而且又是一台‘计蒜机’…”<br>他们居然觉得很有道理，也是服气</p><p>后面几天里，白天帮忙干点农活。<br>挖了木薯，洗净切段，用小刀竖着裂开一道口子<br>轻轻拉扯，衣衫脱落，雪白的肢体一览无余。<br>木薯的做法有很多，但最喜欢清蒸<br>不放油盐，只靠水气滋养<br>揭盖满房清香，不等动筷，直接就可用手拿。</p><p>再把另一块地种上了百香果<br>砍了新竹，七八个人合力做成棚架。<br>很快，春水就要来<br>可怜的稻草人又要弄湿它的鞋子<br>而新发的枝苗，会在燕歌和暖阳里肆无忌惮地招摇。<br>摇啊摇，一会儿就摇到九月。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-19.jpg&quot; alt=&quot;&quot; width=&quot;450&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;年底恰逢乔迁，回去得比较早。&lt;br&gt;其实也算不上乔迁，爷爷的旧宅子，父辈兄弟合力，翻修重建&lt;br&gt;多了一个出逃城市，到乡村度假的地方。&lt;br&gt;当它以新面貌出现在眼前时&lt;br&gt;不免真的觉得衰败的新生相当感慨。&lt;/p&gt;
+&lt;p&gt;特别是在年底，这个喜旧迎新的时节&lt;br&gt;好像很多往事，被年关一催，不断提纯&lt;br&gt;又沉淀出了最好的那部分。&lt;br&gt;然后你看着它，只能很简单又笃定的说一声：&lt;br&gt;好棒哦！&lt;/p&gt;
+&lt;p&gt;但说起新居入伙，有件事我想起就想笑。&lt;br&gt;大概10岁时，第一次搬家，有个迷之仪式印象太深刻。&lt;br&gt;按着习俗，我左手要拿着一根葱，葱通聪，象征聪明伶俐&lt;br&gt;右手拿一根蒜，蒜通算，意思是会算术。&lt;br&gt;这活脱就是一羞耻的莹草cosplay啊&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>薛定谔的年 1.1 -1.7</title>
+    <link href="http://example.com/2017/01/08/diary-2017-0101-0107/"/>
+    <id>http://example.com/2017/01/08/diary-2017-0101-0107/</id>
+    <published>2017-01-08T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-18.jpg"></p><p>传说中，现在这段元旦到除夕的时间<br>由于不知该称之“今年”或“明年”<br>有人就说，叫薛定谔的年好了！<br>这么一想，好像许多东西都可以跟薛定谔扯上关系。</p><p>比如这周，每天醒来第一件事<br>就是到12306查一下有没有薛定谔的票<br>有了，就输入那个神才知道对不对的薛定谔验证码<br>去完成这笔的鬼才知道成不成功的薛定谔订单</p><p>这世道，上半年的代码，到下半年能不能编译都要打个问号<br>就不要试想真切地看清这繁花世界啦。<br>Mr.Big不断重复着：Oh baby baby it’s a wild world…<br>有时候发现我等的就是这几个字。</p><span id="more"></span><hr><p>这周把kindle的书摘和笔记导了出来，是时候整理一下了。<br>不过这一年的读书感受并不好，也不仅是对最近的畅销书大失所望。</p><p>以前有些书看到一半就觉得很糟糕，疑惑怎么会有这么多人喜欢呢？<br>但批判一件事，就得先完成它。<br>等到真正看完，你又突然明白了喜爱的理由。<br>这种奇妙感觉已经太久没遇到了。</p><p>然后友谊书城变得越来越吵<br>而且很会调果茶的那个漂亮姐姐也走了<br>不知道这两回事有没有必然联系…<br>反正我是很少再去。</p><p>不过看着笔记还是能想起很多事情。<br>有些摘录根本不知所以，但模糊不清反而会更有意思<br>仿佛一种梦境的延伸。<br>它们的存在，证明时光的缝隙里<br>出现过一瞬间薛定谔式的触动与喜欢</p><p>仅此而已，就可知足，就能圆满。<br>因为有时候，一瞬间的心有灵犀<br>比一万年的细水长流要隽永得多。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-18.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;传说中，现在这段元旦到除夕的时间&lt;br&gt;由于不知该称之“今年”或“明年”&lt;br&gt;有人就说，叫薛定谔的年好了！&lt;br&gt;这么一想，好像许多东西都可以跟薛定谔扯上关系。&lt;/p&gt;
+&lt;p&gt;比如这周，每天醒来第一件事&lt;br&gt;就是到12306查一下有没有薛定谔的票&lt;br&gt;有了，就输入那个神才知道对不对的薛定谔验证码&lt;br&gt;去完成这笔的鬼才知道成不成功的薛定谔订单&lt;/p&gt;
+&lt;p&gt;这世道，上半年的代码，到下半年能不能编译都要打个问号&lt;br&gt;就不要试想真切地看清这繁花世界啦。&lt;br&gt;Mr.Big不断重复着：Oh baby baby it’s a wild world…&lt;br&gt;有时候发现我等的就是这几个字。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 年末</title>
+    <link href="http://example.com/2016/12/31/diary-2016-1225-1231/"/>
+    <id>http://example.com/2016/12/31/diary-2016-1225-1231/</id>
+    <published>2016-12-31T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-17.jpg"></p><p>每年这个时候都要趴在这座天桥，拍一张照<br>看着这个世界似乎没变，但又在喧哗和前行。</p><p>这年成长了挺多，也学会看淡一些事情<br>可能是代码写多了，感觉世界的逻辑有时很简单。<br>事情无非是let，变化历历<br>或者是const，永恒安息</p><p>如果一开始就想清楚，留不住的就随风去，不会变的就钉到骨子里。<br>那你说多轻松。</p><span id="more"></span><hr><p>今年最好的专辑是《<a href="http://music.163.com/#/album?id=34674226">丑奴儿</a>》<br>“草东没有派对”，这个百科都还没有词条的乐队，注定是会火的。<br>事实上，11月才听到这张专辑<br>大帅推荐给我的时候，我还对这个奇怪的乐队名称咋舌不已。<br>然后听到了凌晨四点<br>很多人说像万青，但我更怀念起以前的痛仰。</p><p>八百年前的这首词里，辛弃疾早就写下了怀想：欲说还休。<br>深沉的忧愁，从不需要点破呀<br>卿卿吾师，多有教我。</p><hr><p>最喜欢的番剧是《<a href="http://bangumi.bilibili.com/anime/3461">从零开始的异世界</a>》<br>……<br>没什么好说的，站个队吧：<br>如果真爱有颜色，那一定是#00f</p><hr><p>最喜欢的电影是《<a href="https://movie.douban.com/subject/25921812/">驴得水</a>》<br>张一曼这种女子<br>我本以为最终的最终，注定是要远走的<br>喜欢鲜花，那就蔓延到天边<br>花败再开，从头来过，也许她也这么想过</p><p>但荒诞的教堂里，众人的面具纷纷揭下<br>鲜花被践于脚下，只留下了一把枪<br>自由的方式有两种，要么离去，要么死去…<br>一记枪声，一记耳光。</p><hr><p>最喜欢的书是《<a href="https://book.douban.com/subject/26698660/">巨人的陨落</a>》<br>事实上市面对这本书有些过誉，但的确引人入胜。<br>一战前后的爱恨情仇与民族悲欢交织在一起<br>疯狂的世界，就变得浪漫又冰寒，让人回味不已。<br>相信后面肯定会拍成美剧<br>我一定会去看，只为验证一下和心中的人物是否相符。</p><p>人们常常嘲笑“螳臂当车”<br>但有时候啊，你并不是驾车的人<br>正巧是那只，反抗不了的螳螂。</p><hr><p>最喜欢的游戏是《<a href="https://www.unchartedthegame.com/en-us/">神秘海域4</a>》<br>当年监狱里的三个男人，最终又站在同一条船上时<br>Rafe为了名望，Sam为了梦想<br>才能发现，Nate是如此的单纯——<br>他只是享受探险过程的乐趣。</p><p>这个还会举起水枪自娱自乐的家伙<br>才是乌托邦世界里的老男孩。<br>可能，人只要愿意<br>就可以永远年轻得像个无所畏惧的混蛋吧？</p><p>愿你也如此。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-17.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;每年这个时候都要趴在这座天桥，拍一张照&lt;br&gt;看着这个世界似乎没变，但又在喧哗和前行。&lt;/p&gt;
+&lt;p&gt;这年成长了挺多，也学会看淡一些事情&lt;br&gt;可能是代码写多了，感觉世界的逻辑有时很简单。&lt;br&gt;事情无非是let，变化历历&lt;br&gt;或者是const，永恒安息&lt;/p&gt;
+&lt;p&gt;如果一开始就想清楚，留不住的就随风去，不会变的就钉到骨子里。&lt;br&gt;那你说多轻松。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 回以沉默 11.12-11.19</title>
+    <link href="http://example.com/2016/11/20/diary-2016-1112-1119/"/>
+    <id>http://example.com/2016/11/20/diary-2016-1112-1119/</id>
+    <published>2016-11-20T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-16.jpg"></p><p>17号，回华科。<br>和上一次不一样，这次多了点儿使命感：做一次前端技术演讲。</p><p>学生时代，我听过无数场分享。<br>总觉得台上高谈阔论嘉宾，离我实在太远。<br>一次分享，一别两端，然后各自回到自己的生活轨道，再无交集。<br>或者是我没有入心。</p><p>但想不到，这么快台上的这个人就该是我了。<br>仿佛晚会还在继续，帷幔也没收起。<br>魔术师说，天色还早呀，我再给你们变个魔术吧<br>烟雾腾空，灯光明灭，时间掠影而过<br>我本来是台下端坐的观众，一下子就站到了台上<br>主持人把话筒一递，说，该你了。</p><span id="more"></span><p>16号，扇了自己几个耳光。<br>明天，代表腾讯，回华科，你的主场，该你了，发什么呆，快去准备啊！</p><p>但准备个屁啊。<br>我在其他地方跟同行分享总是从容，一想到回华科就紧张得不行…<br>话是这么说，还是改ppt到了凌晨4点。<br>就像你考试前说，老子不考了还看什么书？最后还是会把书看了当了孙子。</p><hr><p>但结果还不错。<br>发现自己还是很容易能跟学生们混在一起。<br>书记和辅导员也都很nice。<br>他们很多想法都挺好的，而且学院现在也有了钱，可以付之实现。<br>还吃到了洪山菜苔，这一味菜，胜过了所有山珍海味。</p><p>碰到了Java，这次他代表美团回来分享。<br>气色不错，技术比许多同龄人都要强，也有了女朋友，挺好。<br>还有专程赶过来的兔子，太贴心了。<br>一别三年，恍如昨日。</p><p>兜兜转转，还是回到了沁苑科创基地。<br>这个地方，曾满载我的得意与失落，成长与迷失，团聚与孤单。<br>短短的相聚，一种回家的感觉，晚上看着大家的留言，真的很感动。<br>我说：希望下次见面，不会太久。</p><p>即使一别两端，我也会时常眺望你们的轨道<br>知道大家都是在努力的方向，就够了。<br>啊原来是这样。</p><hr><p>这次回来，我几乎谁也没有告诉。<br>本来受学校的邀请，自然是一件光荣的事情。<br>但昭告天下不是我想做的，也需要保持清醒，我真的还不够好。<br>要是我真的觉得自己可以了<br>嗯，我知道，我会说。</p><p>以前很喜欢《钢之炼金术士》<br>牛姨的一番话曾掀起我的幻想，那张图还一直存放在手机里<br>她说：</p><blockquote><p>在几年前，我扔下这样的一句话就离家出走了：<br>“不能用漫画养活自己，我誓不回来！”<br>现在，我的愿望实现了<br>我在画连载，真是太好了<br>但这下子又忙得没时间回家了<br>真是悲喜交集啊</p></blockquote><hr><p>还没到愿望实现的时候呀<br>Back with silence<br>那就，再等等</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-16.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;17号，回华科。&lt;br&gt;和上一次不一样，这次多了点儿使命感：做一次前端技术演讲。&lt;/p&gt;
+&lt;p&gt;学生时代，我听过无数场分享。&lt;br&gt;总觉得台上高谈阔论嘉宾，离我实在太远。&lt;br&gt;一次分享，一别两端，然后各自回到自己的生活轨道，再无交集。&lt;br&gt;或者是我没有入心。&lt;/p&gt;
+&lt;p&gt;但想不到，这么快台上的这个人就该是我了。&lt;br&gt;仿佛晚会还在继续，帷幔也没收起。&lt;br&gt;魔术师说，天色还早呀，我再给你们变个魔术吧&lt;br&gt;烟雾腾空，灯光明灭，时间掠影而过&lt;br&gt;我本来是台下端坐的观众，一下子就站到了台上&lt;br&gt;主持人把话筒一递，说，该你了。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 哪天才能歌唱的话 10.30-11.05</title>
+    <link href="http://example.com/2016/11/06/diary-2016-1030-1105/"/>
+    <id>http://example.com/2016/11/06/diary-2016-1030-1105/</id>
+    <published>2016-11-06T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe><p>想起网易账户密码泄露，就发生在10月底。<br>去年的这个时候，我是受害者之一。</p><p>但我没有着急改密码。<br>一是因为那个时候，我过着一种近乎抑郁灰白的生活。<br>所有的社交工具都停掉了，也不与人交流。<br>很多事情我不愿碰。<br>像燃尽的烟柱，自己伸手一掸，搞不好满世界尘埃<br>还不如让风来悄悄瘗埋。</p><p>二是因为一位神秘的朋友闯进了生活。<br>我很喜欢冲绳民谣，在云音乐里上传了BEGIN的《三线の花》与《笑颜不变》。<br>这位朋友搞到我的账号密码后，貌似没做什么坏事，光给我推荐歌曲了…<br>TA先上传了没有版权的《岛人ぬ宝》，再后来是夏川和中孝介的一些歌。<br>那时，这些音乐，居然成了我跟外界连通的唯一绳索。</p><span id="more"></span><p>有个晚上狂风暴雨，我在深大门口已经等了一小时的车。<br>最终回到家，直接把湿透的身体，躺在花纹诡异的瓷砖上。<br>耳边传来中孝介备受摧残的声音…<br>太爽了。<br>也许世界虚无和冰冷，但我可以若无其事。<br>人生苦短，真理靠边站。</p><p>深呼吸。<br>过了午夜，可以，重新开始。</p><blockquote><p>喜びも悲しみも いつの日か唄えるなら<br><strong>无论喜悦还是悲伤 要说哪天才能歌唱的话</strong><br>この島の土の中 秋に泣き冬に耐え<br><strong>在这座岛的土里 泣于深秋 忍受寒冬</strong><br>春に咲く 三線の花<br><strong>春天绽放 三线之花</strong></p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=694286&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;想起网易账户密码泄露，就发生在10月底。&lt;br&gt;去年的这个时候，我是受害者之一。&lt;/p&gt;
+&lt;p&gt;但我没有着急改密码。&lt;br&gt;一是因为那个时候，我过着一种近乎抑郁灰白的生活。&lt;br&gt;所有的社交工具都停掉了，也不与人交流。&lt;br&gt;很多事情我不愿碰。&lt;br&gt;像燃尽的烟柱，自己伸手一掸，搞不好满世界尘埃&lt;br&gt;还不如让风来悄悄瘗埋。&lt;/p&gt;
+&lt;p&gt;二是因为一位神秘的朋友闯进了生活。&lt;br&gt;我很喜欢冲绳民谣，在云音乐里上传了BEGIN的《三线の花》与《笑颜不变》。&lt;br&gt;这位朋友搞到我的账号密码后，貌似没做什么坏事，光给我推荐歌曲了…&lt;br&gt;TA先上传了没有版权的《岛人ぬ宝》，再后来是夏川和中孝介的一些歌。&lt;br&gt;那时，这些音乐，居然成了我跟外界连通的唯一绳索。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 木头人 10.23-10.29</title>
+    <link href="http://example.com/2016/10/30/diary-2016-1023-1029/"/>
+    <id>http://example.com/2016/10/30/diary-2016-1023-1029/</id>
+    <published>2016-10-30T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-15.jpg"></p><p>10月的最后一周，想在天气变冷前，完成一组照片。<br>主题跟树林有关，因为我很喜欢这个季节树叶的厚重感。<br>不过，木头比人难拍太多了。<br>人非草木，起码有表情，有温度，可以装扮。<br>有两次回来，我直接就把照片全删了，心情不太爽，怎么想都是这些树木不配合。</p><p>后来妥协，是不是我得自己做些改变，营造一种拟人的环境呢？<br>因此按快门时，我都很平常的喊一声：“一二三茄子！”<br>那时天色已黑，别人一看这里没人啊…<br>吓坏了两个孩子。<br>对不起！</p><p>另外，一个很重要的经验<br>去小树林记得要带six god…</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-15.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;10月的最后一周，想在天气变冷前，完成一组照片。&lt;br&gt;主题跟树林有关，因为我很喜欢这个季节树叶的厚重感。&lt;br&gt;不过，木头比人难拍太多了。&lt;br&gt;人非草木，起码有表情，有温度，</summary>
+      
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 荔枝永远红不了 10.16-10.22</title>
+    <link href="http://example.com/2016/10/23/diary-2016-1016-1022/"/>
+    <id>http://example.com/2016/10/23/diary-2016-1016-1022/</id>
+    <published>2016-10-23T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-14.jpg"></p><p>这只猫，是我在公园认识的。<br>一年前它还很小，每天穿行于古旧的荔枝林。<br>傍晚我习惯到公园跑步，总能在固定的地点，看到阳光把它拉成巨大猛兽的情景。<br>然而它更喜欢阴影。</p><p>第一次碰到它，他就躲在阴影里。<br>因为是在车底，给它起了个名字<br>叫阿杜…（逻辑满分，拒绝吐槽）</p><span id="more"></span><p>阿杜起先很怕人。<br>我一走近，它就跳到树丛里，又好奇地瞪大眼珠往外看。<br>外面的世界很精彩呀，但也可能很危险。这可能是它的信条。<br>然而，在偶然喂过它几回后，它就单方面宣布和我友好了…<br>猫以食为天，信条是什么？可以吃吗？</p><p>但我只是个过客，阿杜的流浪生活还得继续。<br>并且，这不意味着自由。<br>第一，它每个傍晚都要回到公园，因为这里才有游人吃剩的食物；<br>第二，跟其他小猫不一样，它居然不会爬树！</p><p>所以，阿杜对树上的荔枝很感兴趣。<br>在它的视角，可能那是会日渐变大的玩具球吧。<br>有次我在树下的石凳上看书，是《树上的男爵》<br>想到柯西莫倔强地在树上度过一生，阿杜却学不会爬树，这真是个有趣的玩笑。<br>回过头来，它一动不动地伸长脖子，正瞪着眼睛往上看。<br>空气里漂浮着明媚的尘埃，它的眼睛里好似藏了个宇宙。</p><p>想什么呢？谁知道。反正够不着，像星星。</p><p>但不能上树的猫，和在树上不下来的柯西莫才能简单明亮，<br>最复杂的，是站在地上，又能够着“荔枝”的这个世界。<br>熟了的苹果，掉下来，砸了牛顿的头。<br>阿杜却永远等不到荔枝掉下来的那天。</p><p>因为，后来发生一件事，说有流浪猫死在树下，也有小孩子经过荔枝林时头晕。<br>大家都说是荔枝喷了农药。又有公园的工作者出来“澄清”，说没有喷洒农药。<br>真真假假，早已说不清。<br>我只记得，期待了一季的荔枝，在6月将要变红的那几天，被人一扫而空。<br>因为你要快人一步，才能占得先机，迟了一天，荔枝就到别人口袋了。<br>得到了，就可以，青涩的果实？无所谓。</p><p>外面的世界好精彩…</p><p>这个小小的生灵，用这双眼眸，观望着它不能理解的世界。<br>这是不幸，也是幸；它躲在阴影里，也站在了太阳下。<br>那就继续期待吧阿杜。<br>在来年。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-14.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这只猫，是我在公园认识的。&lt;br&gt;一年前它还很小，每天穿行于古旧的荔枝林。&lt;br&gt;傍晚我习惯到公园跑步，总能在固定的地点，看到阳光把它拉成巨大猛兽的情景。&lt;br&gt;然而它更喜欢阴影。&lt;/p&gt;
+&lt;p&gt;第一次碰到它，他就躲在阴影里。&lt;br&gt;因为是在车底，给它起了个名字&lt;br&gt;叫阿杜…（逻辑满分，拒绝吐槽）&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 返校日 10.8-10.15</title>
+    <link href="http://example.com/2016/10/20/diary-2016-1008-1015/"/>
+    <id>http://example.com/2016/10/20/diary-2016-1008-1015/</id>
+    <published>2016-10-20T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-13.jpg"></p><p>“我要回武汉！”<br>这句话说了一千遍，终于兑现成一张动车票。</p><p>三年前，毕业的第二天，行李被盗，大学时所有的物件付之东流。<br>背着空空的行囊回家，越想越委屈，导演剧本不对啊，人家西游记八十一难，好歹是个HAPPY ENDING…<br>感觉自己有一种迷之体质，总可以把平静的生活过得波澜壮阔。<br>左脸黑线，右脸微笑，这种技能不是谁都可以，我在考虑要不申个遗。</p><p>总之，国庆后大家都返工，过上岁月静好的生活时，我一个人扛起了到武汉搞事情的大旗。</p><span id="more"></span><h3 id="办证"><a href="#办证" class="headerlink" title="办证"></a>办证</h3><p>首先我要办一些证件。<br>而流程的起源，是我需要到院教务处，盖一个章。<br>所以我就来到大雷音寺，如来佛问：什么事？<br>我：我的经书丢了。<br>佛：谁可以证明你是取经人？<br>我：李世民<br>佛：那你给李世民打个电话<br>我：…</p><p>盖这个章的关键，就是要给当年的辅导员打一个电话，而他也要记得起我。<br>拨通电话的那一刻，心里忐忑不安。<br>据说李世民早已不当皇帝，他去了云南，说不定正在苍山洱海旁葛优躺，过着往事如烟的生活。<br>而我可能连如烟也算不上，只是一颗小小的灰烬。<br>他会记得我吗？</p><p>电话通了，蒋导的嗓音貌似刚睡醒…我心里早已准备好几千字的自我介绍。<br>幸运的是，我刚说出名字，他就记起了我，还说了几件印象深刻的往事。<br>这说明我命里还是有挺多贵人，如果没有你们，我连那半张脸的微笑都会没有。</p><p>还算顺利，拿着盖章的证明到了户政科。<br>这个时候，办理业务的人寥寥无几，火爆的武汉也随境遇变得柔和起来。<br>工作的大姐温柔地说，你下午来，现在办不了哦<br>我问为什么，大姐说，我们网络坏了<br>我很激动，我我我，我会修，我是专业的<br>大姐说：滚</p><p>有意思。<br>不被信任的技术水平，一直是我校学子得以奋进的动力…<br>这个优良传统三年没变过，给你点个赞，我选择死亡。</p><h3 id="迎新晚会"><a href="#迎新晚会" class="headerlink" title="迎新晚会"></a>迎新晚会</h3><p>几天里骑着ofo小黄车在校园瞎逛<br>这个季节对于武汉，简直是种恩赐。<br>风很柔和，阳光可以把影子拽得好长<br>荷塘充盈，桂花也开了<br>梧桐叶的绿还在绵延，准备等待一夜秋雨瞬间染红的辉煌。</p><p>晚上刚好遇到迎新晚会，决定去看看。<br>端着单反走进会场，心里还想着怎么说清楚我不是新生，但希望有个座位这回事。<br>迎面一个学生会领袖身份的人，过来就对我说：你终于来了，坐第一排吧，这位置好拍照…<br>完了还给我几颗糖吃，太贴心了！<br>这位学弟，你也是我的贵人…但希望你工作仔细点啊</p><p>那就只能冒充是记者部的学弟了！<br>晚会开始前，我就想，毕竟我比他们大7岁<br>会不会有代沟？<br>会不会有鬼畜视频？<br>会不会一上来就跳《极乐净土》？</p><p>事实上，晚会非常的小清新，更多的是才艺展示。<br>想到很多以前的事情，也想到偌大的校园，几乎没有我认识的人了。<br>但有这群可爱的学弟学妹，华科人也会像梧桐叶一样，周而复始的成长吧。<br>总之是个奇妙而完美的夜晚。</p><p>嗯，糖也挺甜的…</p><h3 id="又一段路"><a href="#又一段路" class="headerlink" title="又一段路"></a>又一段路</h3><p>办完事情，校园也逛得差不多，我知道该离去了。<br>但还有时间，我计划去另外一个，离武汉不远的地方玩玩。<br>神农架、三峡、庐山、南昌，四选一。<br>不想出游被太多因素干扰，抛了两个硬币决定。<br>南昌。</p><p>去南昌，我就可以凑齐三大名楼。<br>但之前的黄鹤楼和岳阳楼都不算很满意，我这次把心理预期降到最低。<br>这样一来，觉得滕王阁还不错。<br>有时候想，岳阳楼记里的“不以物喜不以己悲”境界太高，不是每个人都能达到的。<br>如果这碗鸡汤你喝不下，就像王勃一样真性情好了。<br>孤鹜不见，落霞常在，该笑就笑，该哭就哭，有什么大不了？</p><p>晚上联系一个老朋友，告诉他我来你家乡啦<br>他觉得我太潇洒，又跑去玩儿了。</p><p>那时我正在秋水广场看这一江的秋水<br>恍惚间，又想起毕业时行李不见的情景<br>我冲出动车站，旁边人来人往，我一人站在那感觉身体动不了，南风呼呼地吹<br>只剩下一副耳机，放着五月天的《孙悟空》，里面唱道：</p><p><strong>“如果要让我活<br>请给我快乐苦痛<br>我从不怕爱错<br>就怕没爱过…”</strong></p><p>有时候<br>你们觉得我浪的风生水起时，<br>我只不过又是独自一人，走过了一段快乐又苦痛的艰难路程呀。</p><p>—— END. Litten on 10.20 （*一些照片在<a href="http://litten.me/gallery/%E8%BF%94%E6%A0%A1%E6%97%A5?password=guest">这里</a>*）</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-13.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;“我要回武汉！”&lt;br&gt;这句话说了一千遍，终于兑现成一张动车票。&lt;/p&gt;
+&lt;p&gt;三年前，毕业的第二天，行李被盗，大学时所有的物件付之东流。&lt;br&gt;背着空空的行囊回家，越想越委屈，导演剧本不对啊，人家西游记八十一难，好歹是个HAPPY ENDING…&lt;br&gt;感觉自己有一种迷之体质，总可以把平静的生活过得波澜壮阔。&lt;br&gt;左脸黑线，右脸微笑，这种技能不是谁都可以，我在考虑要不申个遗。&lt;/p&gt;
+&lt;p&gt;总之，国庆后大家都返工，过上岁月静好的生活时，我一个人扛起了到武汉搞事情的大旗。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 Way Home 10.1-10.7</title>
+    <link href="http://example.com/2016/10/08/diary-2016-1001-1007/"/>
+    <id>http://example.com/2016/10/08/diary-2016-1001-1007/</id>
+    <published>2016-10-08T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-10.jpg"></p><p>《Way Home》是押尾的一首指弹，算不上热门，听的人也少。<br>我不喜欢一首吉他曲太过工整，羽翼丰满的老鹰，就没有了小鸟的自在。<br>不过，教科书般的工整，就有一种禁锢的美感。<br>音符好似尺子上的刻度，不差分毫。<br>如果时间也是一把尺子，那回家这件事也应该是清晰有力的刻度吧。</p><p>九月的最后一天，听着它，回了家。</p><p>推开门，好像一个转场回到从前，书包一丢，喊一句：我回来了，好累啊<br>然后倒在沙发上等吃的，电视上正放着《数码宝贝》。<br>这才应该是那个“无限大な梦”啊！</p><span id="more"></span><p>再选了一个圩日，回岭景<br>我喜欢拍那些村民跨过小木桥去赶圩的场景。<br>很容易就能定格他们的笑脸<br>因为事情很简单，收获了中意的衣服，或者零食、玩具，就是完美的一天。</p><p><img src="/assets/blogImg/diary-12.jpg"></p><p>无论泗罗河变得清或浊<br>无论竹林变得密或疏<br>无论是小木桥，还是后来修建的水泥桥<br>他们都可以不关心。</p><p><img src="/assets/blogImg/diary-11.jpg"></p><p>很多事情，只要你不关心，<br>你就没有了软肋，拥有了无敌的buff，<br>就能很容易把笑容挂在脸上</p><p>真理。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-10.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;《Way Home》是押尾的一首指弹，算不上热门，听的人也少。&lt;br&gt;我不喜欢一首吉他曲太过工整，羽翼丰满的老鹰，就没有了小鸟的自在。&lt;br&gt;不过，教科书般的工整，就有一种禁锢的美感。&lt;br&gt;音符好似尺子上的刻度，不差分毫。&lt;br&gt;如果时间也是一把尺子，那回家这件事也应该是清晰有力的刻度吧。&lt;/p&gt;
+&lt;p&gt;九月的最后一天，听着它，回了家。&lt;/p&gt;
+&lt;p&gt;推开门，好像一个转场回到从前，书包一丢，喊一句：我回来了，好累啊&lt;br&gt;然后倒在沙发上等吃的，电视上正放着《数码宝贝》。&lt;br&gt;这才应该是那个“无限大な梦”啊！&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 凯里 9.11-9.24</title>
+    <link href="http://example.com/2016/09/25/diary-2016-0911-0924/"/>
+    <id>http://example.com/2016/09/25/diary-2016-0911-0924/</id>
+    <published>2016-09-25T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-9.jpg"></p><blockquote><p><em>市面上的web相册都不好用，干脆自己做了个<a href="http://litten.me/gallery/%E7%8E%A9%C2%B7%E5%87%AF%E9%87%8C?password=guest">相册</a>，github开源，取名为<a href="https://github.com/litten/zing-gallery">Zing</a>，待填坑…</em></p></blockquote><hr><p>6月初，要上腾讯大讲堂分享。<br>PPT准备得差不多，缺了个演讲的节奏。<br>我希望的风格是逻辑分明，又不会太过枯燥的，但均衡好这两者并不简单。</p><p>又发觉，“逻辑分明”加“不太枯燥”，<br>掌握不好节奏，就是“一本正经“加”胡说八道”的意思呀！<br>这让我有点慌，搞不好过不久别人就指着我说：看，前端界的泥石流…</p><p>于是那几天，一直听“一席”来找灵感。<br><a href="http://yixi.tv/lecture/366">毕赣《路边野餐》</a>的那一段意外的好，也从中深深地记住了一个陌生的地名：<strong>凯里</strong>。</p><p>我喜欢那种，经行语言（而不是光影）就能渲染出来的，边陲小镇特有的青翠与市侩。</p><span id="more"></span><p>中秋之后的那个早上，醒来得莫名的早。<br>想起凯里，顺手查了动车票，意外的只剩一张，出发时间是两小时后。那还来得及，走起吧。</p><p>于是从深圳到广州，再到贵阳，再到凯里，再到西江千户苗寨，我就到了这个以前压根不知道的地方。<br>百转千回的路程，好像电影胶片被剪辑掉，然后镜头一转，苗家的姑娘就捧着酒站到跟前。</p><p>西江和九月，是两个很烂俗的词。<br>世界上有很多个地方叫西江，也有很多首歌叫九月。<br>然而九月的西江，是一段深刻的旅行。<br>发生的许多事情，看到的许多景，足以忘烦忧。对我来说这就够了。</p><p>人们总是要用“说走就走”来标榜旅行，<br>貌似有了它，才多了一份洒脱。<br>但于我说，这样经常是迫不得已，<br>如果能够，我喜欢一个词，叫“蓄谋已久”。</p><p>我可以精心准备，旅行如约而至。<br>仿佛是一位尊贵的客人，<br>出现在那个预期的，天朗气清的时分。<br>这说明，你的生活总掌握在自己的手里。</p><p>用不着洒脱，才是最大的洒脱。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-9.jpg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;市面上的web相册都不好用，干脆自己做了个&lt;a href=&quot;http://litten.me/gallery/%E7%8E%A9%C2%B7%E5%87%AF%E9%87%8C?password=guest&quot;&gt;相册&lt;/a&gt;，github开源，取名为&lt;a href=&quot;https://github.com/litten/zing-gallery&quot;&gt;Zing&lt;/a&gt;，待填坑…&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;6月初，要上腾讯大讲堂分享。&lt;br&gt;PPT准备得差不多，缺了个演讲的节奏。&lt;br&gt;我希望的风格是逻辑分明，又不会太过枯燥的，但均衡好这两者并不简单。&lt;/p&gt;
+&lt;p&gt;又发觉，“逻辑分明”加“不太枯燥”，&lt;br&gt;掌握不好节奏，就是“一本正经“加”胡说八道”的意思呀！&lt;br&gt;这让我有点慌，搞不好过不久别人就指着我说：看，前端界的泥石流…&lt;/p&gt;
+&lt;p&gt;于是那几天，一直听“一席”来找灵感。&lt;br&gt;&lt;a href=&quot;http://yixi.tv/lecture/366&quot;&gt;毕赣《路边野餐》&lt;/a&gt;的那一段意外的好，也从中深深地记住了一个陌生的地名：&lt;strong&gt;凯里&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;我喜欢那种，经行语言（而不是光影）就能渲染出来的，边陲小镇特有的青翠与市侩。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+    <category term="旅行" scheme="http://example.com/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 imweb-conf 9.4-9.10</title>
+    <link href="http://example.com/2016/09/11/diary-2016-0904-0910/"/>
+    <id>http://example.com/2016/09/11/diary-2016-0904-0910/</id>
+    <published>2016-09-11T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>“<a href="http://imweb.io/topic/57d8ded5eebf12d673f74cdc?utm_source=tuicool&utm_medium=referral">imweb-conf 2016</a> ”周六开始<br>每到这个时候，都觉得一年又过去得这么快。<br>今年，有直播，有嘉宾，居然还有饭吃，太厉害了。</p><p>回想自己第一次上台，也是在这个大会。<br>不过，当时说的啥肯定很傻。<br>但记得我做了个不错的开场。<br>果然吹牛更能达成诗和远方、光芒万丈的效果。</p><p>另外一个期待，就是能见着许多老朋友<br>他们风尘仆仆，从各地赶来。<br>八千里路云和月，千里江陵一日还，仿佛一种迷之仪式感，出场的时候都应该会有bgm响起</p><p>然而周六那天，突然就发烧了<br>应该是前两夜熬夜做设计带来的连锁反应。<br>那晚做了个梦：皓月当空，天光似水<br>而我的想法居然是，这个月亮好碍眼，怎么用图章工具把这月亮给干掉…</p><p>Photoshop有毒，真的。</p><p>恍惚中想起那个，每年惊蛰，朋友从东方带来一壶酒的故事…<br>然而早已白露而不是惊蛰，世间上也没有那壶叫醉生梦死的酒。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;“&lt;a href=&quot;http://imweb.io/topic/57d8ded5eebf12d673f74cdc?utm_source=tuicool&amp;utm_medium=referral&quot;&gt;imweb-conf 2016&lt;/a&gt; ”周六开始&lt;br&gt;每到这个时候，都觉得一</summary>
+      
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>旧事 奥运 8.14-8.20</title>
+    <link href="http://example.com/2016/08/21/diary-2016-0814-0820/"/>
+    <id>http://example.com/2016/08/21/diary-2016-0814-0820/</id>
+    <published>2016-08-21T02:36:00.000Z</published>
+    <updated>2017-07-28T18:51:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/blogImg/diary-5.jpg" alt="by Chow Hon Lam on Dribble"> </p><p>每晚小板凳备好，乐呵去守着CCTV5<br>里约这个时差刚刚好，反正我忙得不行，只有晚上这点属于自己的时间。</p><p>这两周主要看乒乓赛事<br>最好看还是男团张继科打郑荣植那场<br>郑的反手很强，张却持续使用反手拧拉<br>攻彼之长，陷入苦战</p><p>杨影相当着急，也说张应该选择打正手<br>扬长避短，吃瓜群众都看得出来，何尝张不知道呢？<br>只是，如果这么做，他就可能是马琳或刘国梁，而不是那个鲜衣怒马的张继科了。</p><p>可能这才是我喜欢的奥运吧。</p><p>人有时候，<br>就应该热血而执拗<br>就应该忽略掉喋喋不休的劝诫<br>就应该蠢到无与伦比，不懂变通<br>只为在最终的最终，说上一句：<br>“还是我赢了”。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-5.jpg&quot; alt=&quot;by Chow Hon Lam on Dribble&quot;&gt; &lt;/p&gt;
+&lt;p&gt;每晚小板凳备好，乐呵去守着CCTV5&lt;br&gt;里约这个时差刚刚好，反正我忙得不行，只有晚上这点属于自己的时间。&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="旧事" scheme="http://example.com/tags/%E6%97%A7%E4%BA%8B/"/>
+    
+  </entry>
+  
+</feed>
