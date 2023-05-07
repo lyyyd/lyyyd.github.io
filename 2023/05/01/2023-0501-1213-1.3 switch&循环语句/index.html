@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>1.3 switch&amp;循环语句 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. switch语句1.1 分支语句switch语句 格式 123456789101112switch (表达式) &amp;#123;	case 1:		语句体1;		break;	case 2:		语句体2;		break;	...	default:		语句体n+1;		break;&amp;#125;  执行流程：  首先计算出表达式的值  其次，和case依次比较，一旦有对应的值，就会执行相应的语句，在">
+  <meta name="description" content="1. switch语句1.1 分支语句switch语句 格式 123456789101112switch (表达式) &amp;#123;	case 1:		语句体1;		break;	case 2:		语句体2;		break;	...	default:		语句体n+1;		break;&amp;#125;  执行流程：  首先计算出表达式的值  其次，和case依次比较，一旦有对应的值，就会执行相应的语句">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/05/07/2023-0501-1213-1.3%20switch&%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/index.html">
+<meta property="og:title" content="1.3 switch&amp;循环语句">
+<meta property="og:url" content="http://example.com/2023/05/01/2023-0501-1213-1.3%20switch&%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. switch语句1.1 分支语句switch语句 格式 123456789101112switch (表达式) &amp;#123;	case 1:		语句体1;		break;	case 2:		语句体2;		break;	...	default:		语句体n+1;		break;&amp;#125;  执行流程：  首先计算出表达式的值  其次，和case依次比较，一旦有对应的值，就会执行相应的语句，在">
+<meta property="og:description" content="1. switch语句1.1 分支语句switch语句 格式 123456789101112switch (表达式) &amp;#123;	case 1:		语句体1;		break;	case 2:		语句体2;		break;	...	default:		语句体n+1;		break;&amp;#125;  执行流程：  首先计算出表达式的值  其次，和case依次比较，一旦有对应的值，就会执行相应的语句">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-05-07T14:33:31.685Z">
-<meta property="article:modified_time" content="2023-05-07T05:57:38.174Z">
+<meta property="og:image" content="https://pixabay.com/get/gf81bad71a81b656192a6dadaf8fb5ad9b05a7fd4938b23f83e5cd621958d0333aa377e5eb711a5c97061dfe65f323f62.jpg">
+<meta property="article:published_time" content="2023-05-01T10:36:00.000Z">
+<meta property="article:modified_time" content="2023-05-07T15:08:23.773Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pixabay.com/get/gf81bad71a81b656192a6dadaf8fb5ad9b05a7fd4938b23f83e5cd621958d0333aa377e5eb711a5c97061dfe65f323f62.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -161,9 +164,26 @@
             <article id="post-2023-0501-1213-1.3 switch&amp;循环语句" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      1.3 switch&amp;循环语句
+    </h1>
+  
+
+        
+        <a href="/2023/05/01/2023-0501-1213-1.3%20switch&%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/" class="archive-article-date">
+  	<time datetime="2023-05-01T10:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-01</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-switch语句"><a href="#1-switch语句" class="headerlink" title="1. switch语句"></a>1. switch语句</h2><h3 id="1-1-分支语句switch语句"><a href="#1-1-分支语句switch语句" class="headerlink" title="1.1 分支语句switch语句"></a>1.1 分支语句switch语句</h3><ul>
+        <p><img src="https://pixabay.com/get/gf81bad71a81b656192a6dadaf8fb5ad9b05a7fd4938b23f83e5cd621958d0333aa377e5eb711a5c97061dfe65f323f62.jpg" width="100%"></p>
+
+<h2 id="1-switch语句"><a href="#1-switch语句" class="headerlink" title="1. switch语句"></a>1. switch语句</h2><h3 id="1-1-分支语句switch语句"><a href="#1-1-分支语句switch语句" class="headerlink" title="1.1 分支语句switch语句"></a>1.1 分支语句switch语句</h3><ul>
 <li><p>格式</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (表达式) &#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">		语句体<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		语句体n+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -435,6 +455,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -485,7 +516,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADOElEQVR42u3aS27bQBAFQN3/0grgVQDb9OvuIcAZFVeCTWtYzOKlP69XfL2/rur9/1/Jt+V3fj/ldceFjY2NvQn7fXl9Pz7/nPz2+tUk35l88w+vBhsbG/s49nWcJJ97sZeHUBKHeTRiY2Njfya7Gl3JlZQi1z/HxsbGxp4HWFISrPr+B+U2NjY29sPYSVOpemSvXTU595ZeGjY2Nvbj2dVB75M/3zjfxsbGxn4k+z2+8rWbeXRVA/LXZ8bGxsY+iD1fYcwb/flwt7rKk7+m5oQZGxsb+8Hs3hg1D5Lqg87HvdGIAhsbG/sgdu+YfJSbZEd1GNB70b/+m2NjY2MfwZ6McnuN+/nj5ic26zBsbGzsTdh5IE2WYKqt/0lMFnaUsLGxsQ9lT5BJXFXLid6do/0jbGxs7A3ZeYHRW46prvhM7il00bCxsbEPZU9+krfyk2/uRVpzZQcbGxv7CHbeVJpT81CsDoMjPDY2Nvah7GRQuirY5ks5+fDgh3OxsbGxP4B9fcxkjTIvhJKiIh82Nw/GxsbG3oQ9GcfmbaP8nsm5haYSNjY29hHsXqu9WrpUYywpTvKSJhr3YmNjY2/LzkuOavjl8dOrIHq/xcbGxj6PvaBBE7fpe0s58zrij2fDxsbG3pxdXaBZtViTj5B74fpH6YKNjY19NHttaCVt/flf5Y0tbGxs7PPY1S+tPm5UA7XaRqsCFRsbG/sMdh5dk1eQt4QmAVYIS2xsbOyD2NXxbfJX1fZQcmK+slMedWBjY2Nvy54MVqsPOilUkkjLT8HGxsY+iV0dAOSj3OTgXhsrL4ewsbGxP41dDbOcWh3KTpZ78hYVNjY29nnstXPjapup9yqTJldz/wgbGxt7c/brtivHrH2SwsAAGxsbeyt277/yk3Z8Xh70hgdR0GJjY2MfxJ6s8kxGudXmUa/sqTbLsLGxsfdlVx8ub+hUX0Q1CKt3jvpn2NjY2I9nV0e/1cFqkpmLC4nrv8XGxsbGHsRStR7KT8+LFmxsbOzPZFdfUB48eQT2ln5GAYaNjY29CTtv8VQLifnIobruE3WQsLGxsQ9iz4uBXjjloZiv+9y4soONjY39RPY/7c1FKETN6AYAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADOUlEQVR42u3aS27jUAwEQN//0g4wqwBxlCYpDyS6tDIQW0+lLBr8PB7x9fx3Vb///Uruln/z5ymPd1zY2NjYN2E/D6+fx+efk78ev5rknsmdX7wabGxs7HXs4zhJPvdiLw+hJA7zaMTGxsb+THZ+QC9Ukhg7LnWwsbGxsXsBllDPuv+FchsbGxv7YuykqVQ9steumpz7ll4aNjY29uXZ1UHvlT+/cb6NjY2NfUn289Qrbyr1oqsakL8+JzY2NvYi9gkrjK0ISZpN+SpPdYCBjY2NvYndG6PmQVJ90Pm4NxpRYGNjYy9iT47JB7p5zPReRLUcwsbGxt7Hro5Uq2PXvNg4a9BbKJOwsbGxb87OoyhfgqnGXnUFpzfDxcbGxv4cdjJA7UVgr5zofXO0f4SNjY19Q3YSRecu8VSHxL3o+qOLho2Njb2O3QuSvK1TbSH1Ii0KM2xsbOwPY1fbQNUXNHn11ROxsbGx97GTm+bHV387WcrJhwe/nouNjY29gn18fPLXasz0VjknDamoR4WNjY19W3be9OkFSXV4kDeYqk0obGxs7K3sSWu+WlT0Fn3yxlYSdS9KEWxsbOxF7Lwgmbfse4VE8vqil4uNjY29iD1v0OTlyiQmJ8tGfzwVNjY29s3Z1QWaeSBVR8jVAUZUumBjY2OvZs/npHnD6Kxf5QNpbGxs7H3s6k17EZW8oGrbKC9FoqYSNjY29s3ZeXQd32jeWsoXdPJ/zAldNGxsbOzLs6uwPHiqTahqCDWR2NjY2IvYUY3SGh7kY92zmlP5KdjY2Nib2El4JA9UbQBVS4tyh6y6qYSNjY29jp1ERf7KqkPZyXJPMirAxsbG3squFh69ln3+WMlZ1VjFxsbG3s3ulRyTF1oNv/m52NjY2PvY/6fpn5c05ZZQHIovpiLY2NjYK9iTVZ7JKLfaPOqVPclfsbGxsXewe+316oh30q7Kh8H5c2JjY2PvY+ehVQXkmXlyIXH8W2xsbGzsuGGUFxv5TKM3YHhRimBjY2N/GHtSfuQxk48WqhHbDDBsbGzsm7DzFk913Wc+cqiu+0QdJGxsbOxF7Hkx0AunPBTzdZ83ruxgY2NjX5H9BSlm1JgGil7gAAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 
@@ -499,18 +530,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/05/07/2023-0501-0720-1.1%20java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/05/01/2023-0501-0720-1.1%20java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          1.1 java基础语法
         
       </div>
     </a>
   
   
-    <a href="/2023/05/07/2023-0501-1550-1.4%20IDEA&%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2023/05/01/2023-0501-1818-1.5%20%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1.5 方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -636,6 +667,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
               </li>
              
@@ -649,10 +684,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>
